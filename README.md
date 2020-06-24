@@ -31,4 +31,8 @@ https://kickstarterdb.herokuapp.com/
 # `Campaigns`
 
 | HTTP | Path               | Desc                                   | Data|
+<<<<<<< HEAD
 |-|-|-|-|
+=======
+|-|-|-|-|
+>>>>>>> 7f23e224e352f7ab78e140c10523ddddb4faaf1f
