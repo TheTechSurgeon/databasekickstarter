@@ -7,9 +7,9 @@ const secrets = require("../api/secrets.js");
 
 
 router.post('/register', (req, res) => {
-    const { username, password, email, role } = req.body;
+    const { username, password, email } = req.body;
     if (role === 'helper' || role === 'student') {
-        if (username && password && email && role) {
+        if (username && password && email) {
             let user = req.body;
             const hash = bcrypt.hashSync(user.password, 10);
             user.password = hash;
@@ -20,7 +20,7 @@ router.post('/register', (req, res) => {
                         username: saved.username,
                         password: saved.password,
                         useremail: saved.email,
-                        role: saved.role,
+                        //role: saved.role,
 
                     })
                 })
@@ -41,7 +41,7 @@ router.post('/login', (req, res) => {
                     id: user.id,
                     username: user.username,
                     password: user.password,
-                    role: user.role,
+                    //role: user.role,
                     token,
                 });
             } else {
