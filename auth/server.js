@@ -42,7 +42,7 @@ server.use('/auth', authRouter);
 server.use('/users', authenticate, usersRouter);
 server.use('/tickets', authenticate, ticketsRouter);
 server.get("/", (req, res) => {
-    res.json({ api: "This DevDesk API is up and running" });
+    res.json({ api: "This KickstarterDB API is up and running" });
 });
 
 module.exports = server;
