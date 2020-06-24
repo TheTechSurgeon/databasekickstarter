@@ -4,7 +4,7 @@ Robert Elias Branch
 https://devqueapi.herokuapp.com/
 
 
-# `Dev Desk Backend API` 
+# `Kickstarter Backend API` 
 
 
 # `Auth Login`
@@ -15,7 +15,7 @@ https://devqueapi.herokuapp.com/
 
 | HTTP | Path               | Desc                                   | Data|
 |-|-|-|-|
-| POST | /auth/register | Registers new user. | Expects `{"username":", "password", "email", "role":"}`|
+| POST | /auth/register | Registers new user. | Expects `{"username":", "password", "email"}`|
 | POST | /auth/login    | Logs in a user.   |  Expects `{"username":"", "password":""}`|
 
 # `Users Table`

@@ -22,7 +22,7 @@ describe('register and login', () => {
                     username: 'Robbie',
                     password: 'password',
                     email: "robbie@gmail.com",
-                    role: "helper"
+                   //role: "helper"
                 })
                 .then(res => {
                     expect(res.status).toBe(201)
