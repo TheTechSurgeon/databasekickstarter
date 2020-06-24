@@ -21,7 +21,7 @@ https://kickstarterdb.herokuapp.com/
 
 - Get all users
 
-| POST | /auth/register | Registers new user. | Expects `{"username":", "password", "email", "role":"}`|
+| POST | /auth/register | Registers new user. | Expects `{"username":", "password", "email"}`|
 
 
 | HTTP | Path               | Desc                                   | Data|
