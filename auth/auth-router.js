@@ -8,7 +8,7 @@ const secrets = require("../api/secrets.js");
 
 router.post('/register', (req, res) => {
     const { username, password, email } = req.body;
-    if (role === 'helper' || role === 'student') {
+    
         if (username && password && email) {
             let user = req.body;
             const hash = bcrypt.hashSync(user.password, 10);
@@ -26,7 +26,7 @@ router.post('/register', (req, res) => {
                 })
         } else res.status(400).json({ message: "Missing user parameters" });
 
-    } else res.status(400).json({ message: "Invalid role being sent" });
+    
 });
 
 router.post('/login', (req, res) => {
