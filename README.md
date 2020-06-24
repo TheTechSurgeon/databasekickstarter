@@ -1,4 +1,4 @@
-Robert Elias Branch
+
 
 # `Backend on Heroku API`
 https://kickstarterdb.herokuapp.com/
