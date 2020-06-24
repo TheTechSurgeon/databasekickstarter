@@ -10,8 +10,7 @@ https://kickstarterdb.herokuapp.com/
 # `Auth Login`
 
 - Register and Log in user
-- Ability to determine user as admin(helper) or student using string "student" or "helper"
-- Get list of users and user by id
+
 
 | HTTP | Path               | Desc                                   | Data|
 |-|-|-|-|
@@ -20,8 +19,9 @@ https://kickstarterdb.herokuapp.com/
 
 # `Users Table`
 
-- Update users by id
-- Delete users by id
+- Get all users
+
+| POST | /auth/register | Registers new user. | Expects `{"username":", "password", "email", "role":"}`|
 
 
 | HTTP | Path               | Desc                                   | Data|
@@ -31,8 +31,4 @@ https://kickstarterdb.herokuapp.com/
 # `Campaigns`
 
 | HTTP | Path               | Desc                                   | Data|
-<<<<<<< HEAD
 |-|-|-|-|
-=======
-|-|-|-|-|
->>>>>>> 7f23e224e352f7ab78e140c10523ddddb4faaf1f
